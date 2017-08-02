@@ -18,7 +18,7 @@ void setup() {
 void loop() {
   for(int i = 0; i < NUM_LEDS; i++) {
     digitalWrite(ledPins[i],HIGH);
-    Serial.print(i);
+    Serial.print(ledPins[i]);
     delay(1000);
     Serial.print(", ");
     digitalWrite(ledPins[i],LOW);
